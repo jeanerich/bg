@@ -1,0 +1,116 @@
+body #main_header{}
+
+.battle_billboard{display: block; width: 100%; background: white; height: calc(100vh - 105px);}
+.battle_billboard.home{background: #252525;}
+.battle_billboard .board{position: absolute; display: block;}
+.battle_billboard #board1{width: 100%; height: calc(100vh - 105px); background: #070707;}
+.battle_billboard #board1 .imagewrapper{position: absolute; top: 0; left: 0; width: 50%; height: 100%; background-size: cover!important; background-position: center center!important; display: none;}
+.battle_billboard #board1 .overlay{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url(../images/buttons/hero_background.svg) no-repeat; background-size: cover; background-position: top center;}
+.battle_billboard #board1 .textwrapper{width: calc(50% - 200px); position: absolute; bottom: calc(50% - 220px); right: 100px; padding-top: 60px;}
+.battle_billboard #board1 .textwrapper .icon{width: 80px; height: 40px; position: absolute; top: 0; left: 0; background: url(../images/brand/logo-bg-diamond-empty-white.svg) no-repeat; background-size: 40px 40px; background-position: center left;
+}
+.battle_billboard #board1 .textwrapper .icon .bar{width: 20px; position: absolute; top: 18px; left: 36px; width: 30px; border-top: 3px solid white;}
+.battle_billboard #board1 .textwrapper h1{font-size: 80px; font-weight: 100; line-height: 1.4em; text-decoration: underline; letter-spacing: 0.2em;}
+.battle_billboard #board1 .textwrapper .button{padding: 20 40px; font-size: 2em; margin-top: 1em;}
+.battle_billboard #board1 .textwrapper h3{font-size: 24px; letter-spacing: 0.1em; margin: 20px 0;}
+.battle_billboard #board1 .textwrapper h3 a{text-decoration: underline; color: #ffad2d;  }
+
+#deck_1{background: #242a2d; padding: 80px 0; text-align: center;}
+#deck_1 h2{font-size: 40px; border-bottom: 3px solid #FFFFFF; display: inline-block;  letter-spacing: 0.1em;}
+
+@media(max-height: 1024px){
+	.battle_billboard{}
+}
+
+@media(max-height: 840px){
+	.battle_billboard #board1 .textwrapper{bottom: calc(50% - 180px); }
+	.battle_billboard #board1 .textwrapper h1{font-size: 60px;}
+}
+
+@media(max-height: 640px){
+	.battle_billboard #board1 .textwrapper h1{font-size:45px;}
+	.battle_billboard #board1 .textwrapper .button{font-size: 1em;}
+}
+
+@media(max-width: 1023px){
+	.battle_billboard #board1 .textwrapper{width: calc(50% - 100px); right: 50px;}
+	.battle_billboard #board1 .textwrapper h1{font-size:45px;}
+}
+
+@media(max-width: 840px){
+	.battle_billboard #board1 .textwrapper{bottom: calc(50% - 150px); }
+	.battle_billboard #board1 .textwrapper h1{font-size:36px;}
+	.battle_billboard #board1 .textwrapper h3{font-size: 18px;}
+	.battle_billboard #board1 .textwrapper .button{font-size: 1em;}
+}
+
+@media(max-width: 640px){
+	
+	.battle_billboard #board1 .imagewrapper{
+		width: 100%; 	
+	}
+	
+	.battle_billboard #board1 .overlay{background: rgba(0,0,0,0.4); width: 100%; }
+	
+	.battle_billboard #board1 .textwrapper{width: calc(100% - 40px); right: 20px; bottom: 50px;}
+}
+
+.battle_billboard .vote_machine{position: relative;  width: 100%; height: 100%;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2b3136+0,1c2023+100 */
+background: rgb(43,49,54); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, rgba(43,49,54,1) 0%, rgba(28,32,35,1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(43,49,54,1) 0%,rgba(28,32,35,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(43,49,54,1) 0%,rgba(28,32,35,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b3136', endColorstr='#1c2023',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+ }
+
+
+/*------------------------------ 3D -------------------------*/
+
+.depth{
+	-webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ie-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.tspeed250{transition: transform opacity 250ms;}
+.tspeed500{transition: all 500ms;}
+.tspeed1000{transition: transform opacity 1000ms;}
+
+.side_panel_wrapper{
+	width: calc(50% - 180px);
+    height: calc(100%);
+    position: absolute;
+    top: 0;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    -ms-perspective: 800px;
+    perspective: -800px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ie-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+	
+}
+
+.side_panel_wrapper.left{left: 0;}
+.side_panel_wrapper.right{right: 0;}
+
+.side_panel_wrapper > .panel{position: absolute; top: 0; width: 100%; height: 100%; background: blue;  opacity: 0;}
+
+.side_panel_wrapper.left .panel{
+	transform-origin: 0% 0%;
+	left: 0;
+	transform: rotateY(150deg);
+	
+}
+
+.side_panel_wrapper.left .panel.display{transform: rotateY(15deg); opacity: 1; }
+
+.side_panel_wrapper.right .panel{
+	transform-origin: 100% 0% ;
+	right: 0;
+	transform: rotateY(150deg);
+}

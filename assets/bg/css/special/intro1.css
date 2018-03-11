@@ -1,0 +1,110 @@
+/* CSS Document */
+
+
+.transition250{transition: all 250ms;}
+.transition500{transition: all 500ms;}
+.transition1000{transition: all 1000ms;}
+.transition2000{transition: all 2000ms;}
+.transition3000{transition: all 3000ms;}
+
+#battle_hero{height: calc(100vh - 165px); overflow: hidden;}
+.board{height: 100%; position: relative;}
+#board_1 .diamond1{
+	width: 120px; height: 120px; position: absolute; left: calc(50% - 60px); top: calc(50% - 60px);
+	background: url(../images/brand/logo-bg-diamond-empty-white.svg) no-repeat; background-size: 90% 90%; background-position: center center;
+}
+
+#board_1 .clock1{width: 600px; height: 600px; position: absolute; top: calc(50% - 300px); left: calc(50% - 300px); background: url(../images/special/intro1/clock-1.svg) no-repeat; background-position: center center;
+	transform: translateZ(100px);
+    animation-name: clock1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#board_1 .clock2{width: 600px; height: 600px; position: absolute; top: calc(50% - 300px); left: calc(50% - 300px); background: url(../images/special/intro1/clock-2.svg) no-repeat; background-position: center center; background-size: 200% 200%; 
+	transform: translateZ(100px);
+    animation-name: clock2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+#board_1 .diamond{width: 300px; height: 300px; position: absolute; top: calc(50% - 150px); left: calc(50% - 150px); background: url(../images/brand/logo-bg-diamond-empty-white.svg) no-repeat; background-size: 80% 80%; background-position: center center;}
+#board_1 #vote_diamond{width: 200px; height: 30px; position: absolute; top: calc(50% - 15px); left: calc(50% - 100px); text-align: center; display: none;}
+#board_1 #vote_diamond h2{font-size: 28px; }
+#board_1 .welcome_text1{position: absolute; top: calc(50% - 200px); width: 300px; left: calc(50% - 150px); text-align: center;}
+#board_1 .welcome_text2{position: absolute;  bottom: calc(50% - 200px); width: 300px; left: calc(50% - 150px); text-align: center;}
+
+#board_1 .welcome_text1 p, #board_1 .welcome_text2 p{font-family: din-condensed, "Helvetica Narrow","Arial Narrow", sans-serif; font-size: 1.5em; letter-spacing: 0.2em; font-weight: 200; text-transform: uppercase; display: inline-block; overflow: hidden; font-size: 2em; line-height: 1em; margin: 0; padding: 0; position: relative; }
+
+#board_1 .welcome_text{height: 30px; overflow: hidden; }
+#board_1 .welcome_text p{top: 100%; transition: top 0.5s;}
+#board_1 .welcome_text.show p{top: 0%; transition: top 0.5s;}
+
+#board_1 #vote_diamond .next_sequence{position: absolute; top: 0; left: 0; width: 100%; display: none; color: #ffad2d;}
+
+#board_1 {height: 100%; display: block; position: relative;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.2+0,0.2+40,1+100 */
+background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 40%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 40%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 40%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+#board_1 .side_panel_wrapper{position: absolute; top: 0; width: 50%; height: 100%; perspective: 800px;}
+#board_1 .side_panel_wrapper.left{left: 0;}
+#board_1 .side_panel_wrapper.right{right: 0;}
+
+#board_1 .bg_grid{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url(../images/special/grid-bg1.svg) repeat; background-size: 20px 20px; opacity: 0.3; }
+
+#board_1 .side_panel_wrapper .panel{width: 100%; height: 100%; position: absolute; top: 0; background: #151515;}
+#board_1 .side_panel_wrapper.left .panel{left: 0; transform: rotateY(150deg); transform-origin: 0 50%; }
+#board_1 .side_panel_wrapper.left .panel.active{ transform: rotateY(15deg); }
+#board_1 .side_panel_wrapper.left .panel.active.out{ opacity: 0; }
+
+#board_1 .side_panel_wrapper .panel .highlight{position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 1; transition: opacity 1s;}
+#board_1 .side_panel_wrapper.left .panel .highlight{background: rgba(0,0,0,0.8); opacity: 1;}
+#board_1 .side_panel_wrapper.right .panel .highlight{background: rgba(255,255,255,0.8); opacity: 1;}
+
+#board_1 .side_panel_wrapper .panel .overlay_bg{position: absolute; top: 0; left: 0; width: calc(100% - 80px); height: calc(100% - 80px); padding: 40px; background: rgba(0,0,0,0.5); text-align: center; display: none;}
+#board_1 .side_panel_wrapper .panel .overlay_bg h2{font-size: 48px; color: white; letter-spacing: 0.2em;}
+#board_1 .side_panel_wrapper .panel .overlay_bg h4{font-size: 24px; letter-spacing: 0.2em;}
+#board_1 .side_panel_wrapper .panel .overlay_bg p{font-size: 12px; text-transform: uppercase;}
+
+#board_1 .side_panel_wrapper .panel .overlay_bg .topdiamond{display: block; height: 40px; background: url(../images/brand/logo-bg-diamond-empty-orange.svg) no-repeat; background-size: 30px 30px; background-position: center top;}
+
+#board_1 .side_panel_wrapper.right .panel{right: 0; transform: rotateY(-150deg); transform-origin: 100% 50%;}
+#board_1 .side_panel_wrapper.right .panel.active{ transform: rotateY(-15deg); }
+#board_1 .side_panel_wrapper.right .panel.active.out{ opacity: 0; }
+#board_1 .side_panel_wrapper .panel.active .highlight{opacity: 0; transition: opacity 1s;}
+
+#board_1 .side_panel_wrapper .panel .imagewrapper{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover!important; background-position: center center!important;}
+
+#board_1 .side_panel_wrapper .panel:hover .imagewrapper{/*background-size: contain!important; */}
+
+#board_1 .diamond .arrow.left{width: 0px; height: 150px; position: absolute; top: calc(50% - 75px); right: 260px; background: url(../images/special/intro1/key2-left.svg) no-repeat; background-size: 150px 75px; background-position: center right; transition: width 0.5s; cursor: pointer;}
+#board_1 .diamond .arrow.right{width: 0px; height: 150px; position: absolute; top: calc(50% - 75px); left: 260px; background: url(../images/special/intro1/key2-right.svg) no-repeat; background-size: 150px 75px; background-position: center left; transition: width 0.5s; cursor: pointer;}
+
+#board_1 .diamond.open .arrow.left, #board_1 .diamond.open .arrow.right{width: 300px; transition: width 1s;}
+
+.zoom_image{position: absolute; top: calc(50% - 25px); width: 50px; height: 50px; background: rgba(0,0,0,0.5) url(../images/buttons/search-icon.svg) no-repeat; background-size: 30px 30px; background-position: center center; border-radius: 50px; cursor: pointer; opacity: 1; transition: opacity 0.5s;}
+.zoom_image:hover{opacity: 1; transition: opacity 0.5s;}
+.zoom_image.left{left: 0;}
+.zoom_image.right{right: 0;}
+
+#fs_wrapper_padding{display: block; padding: 0px; height: calc(100%);}
+#fs_wrapper_padding #preview_image_wrapper{width: 100%; height: 100%; background: #151515; display: block;}
+@media(max-height: 1024px){
+	#battle_hero{height: calc(100vh - 105px); }
+}
+
+@keyframes clock1{
+	from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@keyframes clock2{
+	from {transform:rotate(0deg);}
+    to {transform:rotate(-360deg);}
+}
+

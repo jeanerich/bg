@@ -1,0 +1,4 @@
+body{background: #EEE; color: #151515;}
+#deck_1{background: none;}
+#deck_1 h1{font-size: 60px; display: block; padding-top: 120px; background: url(../images/buttons/icon-warrior-rank-grey.svg) no-repeat; background-size: 80px 80px; background-position: center top 25px;}
+#test{color: red;}

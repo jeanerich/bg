@@ -1,0 +1,4 @@
+<div id='profile_head' hero_id="<?php echo $memberInfo['hero_id']; ?>"><div class='background'<?php if($memberInfo['hero_id'] > 0): ?> style="background: url(<?php 
+	echo $images[$memberInfo['hero_id']]['source']; ?>) no-repeat;"<?php endif; ?>><div class='hero_mask'></div><div class='title_card'><div class='icon softblink'></div><h1><?php echo $memberInfo['name']; ?></h1><h2><?php echo $memberInfo['title']; ?></h2><div class='bar'></div></div></div><?php 
+	if($editable): ?><div class='nav'><a class='button' href='#' onclick="fs_modal('user/add_hero_image/<?php echo $memberId; ?>'); return false;"><?php echo $this->functions->_e("modify hero image", $dictionary); ?></a></div><?php endif; ?>
+    <?php include(DIR_TEMPLATES . "profile/profile_avatar.php"); ?></div>

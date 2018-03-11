@@ -1,0 +1,247 @@
+#main_hero{width: 100%; height: 250px; position: relative; display: block; background: #151515; background-size: cover!important; background-position: center center!important;}
+#main_hero .hero_nav{position: absolute; bottom: 0px; right: 0px;}
+
+.form.dark .formfield label{font-family: din-condensed, sans-serif;  font-size: 1.2em; text-transform: uppercase;}
+
+.form.dark .formfield input[type=text], .form.dark .formfield select, .form.dark .formfield textarea, .form.dark .formfield input[type=email], .form.dark .formfield input[type=password], .form.dark .formfield input[type=date]{background: #000000; color: #CCC;}
+
+.form.dark .formfield .radiobar{
+	display: block;
+	width: calc(100% - 20px);
+}
+
+.form.dark .formfield .radiobar .radiobutton{background: black; padding: 10px 0; text-align: center; cursor: pointer;}
+.form.dark .formfield .radiobar .radiobutton.active, .form .formfield .radiobar .radiobutton:hover{background: #ffad2d; transition: background 0.25s;}
+.form.dark .formfield .radiobar .radiobutton.active .check, .form .formfield .radiobar .radiobutton:hover .check{position: absolute; top: 0; left: -30px; width: 16px; height: 16px; background: url(../images/buttons/checked-dark.svg) no-repeat;}
+.form.dark .formfield .radiobar .radiobutton span{font-size: 16px; text-transform: uppercase; margin: 0 auto; display: inline-block; position: relative;}
+.form.dark .formfield .radiobar .radiobutton.active span, .form .formfield .radiobar .radiobutton:hover span{color: black;}
+
+.form.dark .formfield .radiobar  .radioselect{display: inline-block; background: url(../images/buttons/checkbox-unchecked-grey.svg) no-repeat; background-size: 24px 24px; background-position: left top 5px;}
+.form.dark .formfield .radiobar  .radioselect span{font-size: 13px; height: 20px;  display: block; padding: 10px 10px 10px 32px; cursor: pointer;}
+.form.dark .formfield .radiobar  .radioselect.active{background: url(../images/buttons/checkbox-checked-grey.svg) no-repeat; background-size: 24px 24px; background-position: left top 5px;}
+.form.dark .formfield.size1of3{width: 33.33%;}
+
+.form.dark .formfield.error input{background: red;}
+
+.form.dark button{background: #ffad2d; color: #151515; font-size: 18px; font-family: din-condensed, sans-serif; padding: 15px 0; width: calc(100% - 20px); text-align: center; border: 0px none; display: block; text-transform: uppercase; letter-spacing: 0.4em; cursor: pointer; transition: all 0.25s;}
+.form.dark button:hover{background: #151515; color: #FFFFFF; transition: all 0.25s;}
+
+.form.dark .subtext{font-size: 11px; color: white; padding: 2px 0; margin: 0; width: calc(100% - 20px);}
+
+#team_panel{display: none;}
+
+.size1of4 .sidebar_wrapper{width: calc(100% - 40px); padding-left: 40px;}
+
+.size1of4 .cardWrapper{width: 100%; height: 150px; background: #000000; position: relative; background-size: cover!important; background-position: center center!important;}
+.cardWrapper .button{position: absolute; bottom: 0; right: 0;}
+
+
+#manage_battles.list .list_item{width: 100%; background: #0b0b0b; margin-bottom: 30px; position: relative;}
+#manage_battles.list .list_item .thumb{width: 300px; height: 187px; background: #666; display: block; background-size: cover!important; background-position: center center!important;}
+#manage_battles.list .list_item .textwrapper{padding: 40px 20px; }
+#manage_battles.list .list_item .textwrapper ul{width: 280px; border-top: 1px solid #333; margin: 5px 0; padding: 0; text-indent: 0;}
+#manage_battles.list .list_item .textwrapper ul li{border-bottom: 1px solid #333; width: 100%; padding: 2px 0; font-size: 12px; list-style: none;}
+#manage_battles.list .list_item .console{position: absolute; top: 0; right: 0;}
+#manage_battles.list .list_item  .console_item{font-family: din-condensed, sans-serif; font-weight: 200;  display: inline-block; padding: 10px 20px; text-decoration: none; color: black; background: #ffad2d; text-transform: uppercase; letter-spacing: 0.2em;}
+#manage_battles.list .list_item  .console_item.approved{background: #00ff00;}
+#manage_battles.list .list_item  .console_item.time{background: #B26D00; color: white;}
+#manage_battles.list .list_item  .console_item.tovote{background: #2D9FFF; color: white;}
+#manage_battles.list .list_item  .console_item.vote{background: #1069B2; color: white;}
+#manage_battles.list .list_item  .console_item.complete{background: #ff2812; color: white;}
+
+#manage_battles.list .list_item .nav{position: absolute; bottom: 0; right: 0;}
+#manage_battles.list .list_item .nav a{display: inline-block; font-family: din-condensed, sans-serif; font-weight: 200;  display: inline-block; padding: 10px 20px; text-decoration: none; color: black; background: #ffad2d; text-transform: uppercase;}
+#manage_battles.list .list_item .nav a:nth-child(2){background: #B26D00; color: white;}
+
+#battle_List_editor{ width: calc(100% - 20px); min-height: 200px; margin: 20px 0;}
+#battle_List_editor .list{border: 0px none; padding: 0; margin: 0;}
+#battle_List_editor .list .list_item{background: #333; padding: 10px; min-height: 200px; margin-bottom: 10px;}
+#battle_List_editor .list .list_item .thumb{width: 250px; height: 200px; background: #666; display: inline-block; position: relative; background-size: cover!important; background-position: center center!important;}
+#battle_List_editor .list .list_item .thumb .button{position: absolute; bottom: 0; left: 0;}
+#battle_List_editor .list .list_item .text_wrapper{width: calc(100% - 260px); margin-left: 10px;}
+#battle_List_editor .list .list_item .text_wrapper h4 a{text-decoration: none; color: white; font-size: 60px;}
+#battle_List_editor .list .list_item .thumb p.members{font-family: din-condensed, sans-serif; font-weight: 200;  background: #1069B2; color: white; display: inline-block; padding: 10px 15px; position: absolute; top: 0; left: 0; line-height: 1em; margin: 0; text-transform: uppercase;}
+#battle_List_editor .list .list_item .text_wrapper .formfield{margin-bottom: 10px;}
+#battle_List_editor .list .list_item .text_wrapper .formfield:last-child{padding: 0; margin: 0;}
+.pagination{margin-top: 15px;}
+
+.formfield.stickyfooter{padding: 10px 0; position: fixed; bottom: 26px; left: 0; width: 100%; text-align: center; background: #333; margin-bottom: 0; z-index: 5;}
+
+.battle_list{display: block;}
+.battle_list .list_items{display: block; padding-top: 5px; margin-top: 20px; margin-bottom: 80px; width: calc(100% + 10px)}
+
+.battle_list .list_items .tile{width: calc(33% - 10px); height: 395px; float: left; position: relative; background: #050505; margin: 0 10px 10px 0; transition: all 0.25s;}
+.battle_list .list_items .tile:hover{background: #FFFFFF; transition: all 0.25s; box-shadow: 0 0 10px #000;}
+.battle_list .list_items .tile .thumb{width: 100%; height: 50%; position: absolute; top: 0; left: 0; background: #151515; background-size: cover!important; background-position: center center!important;}
+.battle_list .list_items .tile .nav{position: absolute; top: 0; right: 0;}
+.battle_list .list_items .tile .text_wrapper{position: absolute; top: calc(50% + 20px); height: calc(50% - 40px); width: calc(100% - 20px); text-align: center; left: 10px;}
+.battle_list .list_items .tile .text_wrapper h3{color: #FFFFFF; font-size: 2em; line-height: 1.1em;}
+.battle_list .list_items .tile .text_wrapper p.time{color: #FFFFFF; font-size: 13px;}
+.battle_list .list_items .tile:hover .text_wrapper h3, .battle_list .list_items .tile:hover .text_wrapper p.time{color: #151515;}
+.tile .tile_nav{position: absolute; bottom: 0; left: 0; width: 100%; text-align: right;}
+.tile .tile_nav .button{width: 50%; padding: 10px 0; margin: 0; text-align: center;}
+.tile .tile_nav .button.line{width: 100%;}
+
+.hero_mask{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	opacity: 1;
+    background: rgba(0,0,0,0.7);
+    transition: opacity 0.5s;
+}
+
+.hero_mask:hover{opacity: 0; transition: opacity 0.5s;}
+
+#main_hero .title_card {
+    position: absolute;
+    width: calc(100% - 60px);
+    left: 30px;
+    text-align: center;
+    top: calc(50% - 100px);
+    padding-top: 50px;
+}
+
+#main_hero .title_card .icon {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 30px);
+    width: 60px;
+    height: 30px;
+    background: url(../images/buttons/diamond-two-bars.svg) no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.title_card h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    color: white;
+    text-decoration: underline;
+}
+
+.title_card h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    padding: 0;
+    margin: 5px 0 5px 0;
+    color: #ffad2d;
+    text-decoration: underline;
+    display: block;
+}
+
+#main_hero .nav{position: absolute; bottom: 0; right: 0;}
+
+.secondary_menu{padding: 0;
+    margin: 0 0 40px 0;
+    text-indent: 0;}
+
+.secondary_menu li{
+	list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    border-top: 5px solid rgba(255,255,255,0);
+    transition: all 0.25s;
+    font-family: din-condensed, sans-serif;
+    font-weight: 200;
+}
+
+.secondary_menu li.active{
+	    border-top: 5px solid #FFFFFF;
+   		transition: all 0.25s;
+}
+
+.secondary_menu li a{
+	font-weight: 700;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: inline-block;
+    padding: 10px 0;
+	color: white;
+}
+
+.list{width: calc(100% + 10px); display: block; border-top: 0px none; padding-top: 0; margin-top: 10px;}
+.list .tile{width: calc(50% - 10px); margin: 0 10px 10px 0; background: #151515; height: 400px; position: relative;}
+.list .tile .thumb{position: absolute; top: 0; left: 0; width: 100%; height: 200px; background-size: cover!important; background-position: center center!important;}
+
+.list .tile .textwrapper{width: calc(100% - 40px); position: absolute; top: 220px; left: 20px; text-align: center; color: white;}
+.list .tile .textwrapper h3{font-size: 1.5em; letter-spacing: 0.1em; text-decoration: underline;}
+
+.fs_thumb{width: 100%; height: 250px; background: #CCC; display: block; margin-bottom: 10px; background-size: cover!important; background-position: center center!important;}
+
+.form_message{display: none; color: #151515;}
+.form_message p{color: #151515;}
+.form_message.error{}
+.form_message.error p{color: red; font-weight: strong;}
+
+#select_member_preview{position: relative; display: block; min-height: 100px; padding: 5px; background: #EEE; display: none;}
+#select_member_preview .text_wrapper{padding: 10px 0 10px 95px; position: relative;  min-height: 80px;}
+#select_member_preview .text_wrapper .thumb{width: 80px; height: 80px; position: absolute; top: 0; left: 5px; background-size: cover!important; background-position: center center !important;}
+
+#jury_list .list_item:first-child, #mentor_list .list_item:first-child{border-top: 1px solid #999; }
+#jury_list .list_item, #mentor_list .list_item{position: relative; padding: 5px 0; border-bottom: 1px solid #999; min-height: 40px; width: calc(100% - 30px); position: relative;}
+#jury_list .list_item:last-child, #mentor_list .list_item:last-child{border-bottom: 0px none;}
+#jury_list .thumb, #mentor_list .thumb{width: 40px; height: 40px; background-size: cover!important; background-position: center center!important; position: absolute; top: 0; left: 0;}
+#jury_list .list_item .nav, #mentor_list .list_item .nav{position: absolute; top: 5px; right: 0;}
+
+#mentor_list .list_item .text_wrapper{width: 300px;}
+#mentor_list .list_item .text_wrapper label{font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px;}
+
+.form.dark .formfield select {
+	background: black url(../images/buttons/down-tip-grey.svg) no-repeat!important;
+    background-size: 14px 14px!important;
+    background-position: center right 10px!important;
+}
+
+@media(max-height: 1024px){
+	#main_hero{height: 200px;}
+}
+
+@media(max-width: 1023px){
+	.form .formfield.size1of3{
+		width: 100%;	
+	}
+	#edit_battle_form > .size3of4, #edit_battle_form > .size1of4{width: calc(100% + 20px); }
+	.size1of4 .sidebar_wrapper{padding: 0; width: calc(100% - 20px);}
+	
+	.battle_list .list_items .tile{height: 425px;}
+	
+	#battle_view .size3of4{width: calc(100%); }
+}
+
+@media(max-width: 940px){
+	.battle_list .list_items .tile{height: 395px; width: calc(50% - 10px);}
+	.title_card h1{font-size: 32px;}
+}
+
+@media(max-width: 640px){
+	.form .formfield .radiobar .radioselect.size1of3{width: 50%;}
+	.battle_list .list_items .tile{height: 395px; width: calc(100% - 10px);}
+	#deck_1 h2{font-size: 26px;}
+	
+	.fs_thumb{height: 200px;}
+	
+	.list .tile{width: calc(100% - 10px); margin-bottom: 20px;}
+}
+
+@media(max-width: 560px){
+	.fs_thumb{height: 150px;}
+}
+
+@media(max-width: 400px){
+	.fs_thumb{height: 100px;}
+	.title_card h2{font-size: 18px;}
+}
+
+@media(min-width: 1200px){
+	#main_hero{height: 400px;}
+}

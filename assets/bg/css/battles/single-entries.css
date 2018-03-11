@@ -1,0 +1,222 @@
+.gallery_wrapper{
+	min-height: calc(100vh - 166px);
+    background: #242a2d;
+    display: block;
+	margin-bottom: 160px;
+	border-top: 40px solid #050505;
+	position: relative;
+}
+
+.gallery_wrapper .image_wrapper {
+    width: calc(100% - 380px);
+    height: calc(100vh - 166px);
+    background: #050505;
+    float: left;
+    position: relative;
+}
+
+.gallery_wrapper .image_wrapper .img_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain!important;
+    background-position: center center!important;
+    display: none;
+}
+
+.gallery_wrapper .image_wrapper  .zoom{
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: #151515 url(../images/buttons/search-icon.svg) no-repeat;
+    background-size: 50% 50%;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.gallery_wrapper .image_content {
+    position: relative;
+	display: block;
+	width: 379px;
+    border-left: 1px solid #353d41;
+    height: calc(100vh - 166px);
+    float: left;
+    
+}
+
+.gallery_wrapper .image_content .social_bar{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #171717;
+}
+
+.gallery_wrapper .image_content .social_bar a{
+	    display: block;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.gallery_wrapper .image_content .social_bar a.facebook{
+	background: #4267b2 url(../images/buttons/facebook-white-button.svg) no-repeat;
+    background-size: 20px 20px;
+    background-position: center center;
+}
+
+.gallery_wrapper .image_content .social_bar a.twitter{
+	background: #1DA1F2 url(../images/buttons/Twitter_white.svg) no-repeat;
+    background-size: 20px 20px;
+    background-position: center center;
+}
+
+
+.comment_form{position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px 55px 15px 15px;
+    background: #151515;
+    width: calc(100% - 70px);
+}
+
+.comment_form textarea{
+	width: 100%;
+	border: 0;
+	background: none;
+	resize: none;
+	padding: 0;
+	margin: 0;
+	font-size: 13px;
+	height: 20px;	
+	color: #CCC;
+}
+
+.comment_form textarea:focus{outline: none;}
+
+.comment_form .chat_add_image{
+	    display: block;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/buttons/icon-camera-white.svg) no-repeat;
+    background-size: 80% 80%;
+    background-position: center center;
+    opacity: 0.5;
+}
+
+.comment_form .chat_add_image:hover{opacity: 1;}
+
+
+.form.comment_form .formfield{margin-bottom: 5px;}
+.form.comment_form .formfield textarea{background: #050505; color: white; margin-top: 5px; height: 30px; transition: height 0.5s; font-size: 13px;}
+
+
+
+.gallery_wrapper .image_content .scroll_wrapper {
+    position: absolute;
+    bottom: 53px;
+    height: calc(100% - 93px);
+}
+
+.gallery_image_content {
+    width: calc(100% - 60px);
+    padding: 30px;
+}
+
+
+.noted_time{display: block; padding: 10px!important; text-align: center; font-size: 11px; color: #999; }
+
+.message_item{
+	margin-left: 50px;
+    max-width: 180px;
+    padding: 8px;
+    background: #1069B2;
+    border-radius: 5px;
+    color: white;
+    line-height: 1.5em;
+    font-size: 12px;
+    position: relative;
+	margin-top: 2px; margin-bottom: 20px;
+}
+.message_item .tip{
+	width: 15px;
+    height: 15px;
+    background: #1069B2;
+    position: absolute;
+    top: 9px;
+    left: -7px;
+    transform: rotate(45deg);
+}
+
+.message_item.self{background: #151515; margin-left: 80px;  }
+
+.message_item.self .tip{
+	width: 15px;
+    height: 15px;
+    background: #151515;
+    position: absolute;
+    top: 9px;
+    left: initial;
+    right: -7px;
+    transform: rotate(45deg);
+	
+}
+
+.message_item .text_wrap{position: relative; padding: 10px 0 10px 0px; font-size: 13px; line-height: 1.4em; word-break: break-all;}
+.message_item .message_options{position: absolute; top: 0; right: 0;}
+.message_item .message_options .touch{width: 20px; height: 20px; background: url(../images/buttons/menu-dots-white.svg) no-repeat; background-size: 80% 80%; background-position: center center; cursor: pointer; opacity: 0.5; transition: opacity 0.25s;}
+
+.message_item:hover .message_options .touch{opacity: 1; transition: opacity 0.25s;}
+
+.message_item .message_options ul{position: absolute; top: 20px; right: 0; width: 150px; background: white; padding: 10px; margin: 0; text-indent: 0; display: none;}
+.message_item .message_options.open ul{display: block;}
+.message_item .message_options ul li{list-style: none; padding: 0; margin: 0; display: block; border-bottom: 1px solid #CCC;}
+.message_item .message_options ul li:last-child{border-bottom: 0px none;}
+.message_item .message_options ul li a{display: block; padding: 5px; color: #151515; text-decoration: none; font-size: 11px; text-align: right;}
+
+.message_item .author_box{padding: 0; }
+.message_item .author p{padding: 0; margin: 0; opacity: 0.8; font-size: 11px;}
+.message_item .text_wrap p{padding: 0; margin: 0;}
+.message_item .thumb{
+	position: absolute;
+    top: 2px;
+    left: -50px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-size: cover!important;
+    background-position: center center!important;}
+	
+	.message_item.self .thumb{left: initial; right: -50px;}
+@media(max-width: 960px){
+	.gallery_wrapper{width: 100%; overflow-x: hidden;}
+	.gallery_wrapper .image_wrapper {width: calc(100%);}
+	
+	.gallery_wrapper .image_content{position: absolute; top: 0; width: 319px; right: -320px; background: #242a2d; transition: right 0.25s;}
+	
+	.gallery_wrapper .image_content.open{right: 0; transition: right 0.25s;}
+	
+	.gallery_wrapper .image_content .toggle_image_comments{width: 40px; height: 40px; position: absolute; left: -40px; top: 40px; background: rgba(0,0,0,0.5) url(../images/buttons/icon-chat-grey.svg) no-repeat; background-size: 50% 50%; background-position: center center;}
+	.gallery_wrapper .image_content.open .toggle_image_comments{left: 0;}
+}
+	
+@media(max-height: 1024px){
+	.gallery_wrapper{
+	min-height: calc(100vh - 106px);}
+	
+	.gallery_wrapper .image_wrapper {
+    height: calc(100vh - 106px);
+	}
+	
+	.gallery_wrapper .image_content {
+    	height: calc(100vh - 106px);
+	}
+}

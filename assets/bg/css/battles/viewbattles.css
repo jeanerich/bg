@@ -1,0 +1,78 @@
+.top_ribbon{display: block; font-family: din-condensed, sans-serif; font-weight: 200; font-size: 36px; text-align: center; padding: 30px 0; text-decoration: none; color: black; background: #ffad2d; text-transform: uppercase;}
+h1{font-size: 48px; letter-spacing: 0.1em;}
+#page_wrapper .deck_head h3{margin-bottom: 30px; border-bottom: 1px solid #CCC;}
+
+.calendar_item{display: block; margin-bottom: 30px;}
+.calendar_item .calendar_item_head{background: #ffad2d; padding: 10px; display: inline-block;  min-width: calc(100% - 20px);}
+.calendar_item .calendar_item_head h4{color: #151515; font-size: 28px;}
+
+.calendar_item .calendar_item_content{background: #B26D00; color: #FFF; padding: 10px; display: block; font-size: 0.9em; line-height: 1.5em; }
+
+.size3of4 .unit_right_padding{display: block; padding-right: 80px; width: calc(100% - 80px);}
+
+#enter_battle_deck{}
+#enter_battle_deck ul{padding: 0; margin: 0; text-indent: 0;}
+#enter_battle_deck ul li{position: relative; padding: 20px 0 20px 50px;   list-style: none;}
+#enter_battle_deck ul li .node{width: 20px; height: 20px; padding: 10px; background: white; color: #151515; position: absolute; top: 10px; left: 0; text-align: center; font-weight: 700; clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);}
+#enter_battle_deck ul li a{font-weight: 700; color: white; text-transform: capitalize;}
+
+.submission_deck{display: block; position: relative; padding-bottom: 60px;}
+.submission_deck .sub_deck:nth-child(1){display: block;}
+.submission_deck .sub_deck:nth-child(2){display: none;}
+.submission_deck .sub_deck:nth-child(3){display: none;}
+
+.submission_deck.active .sub_deck:nth-child(1){display: none;}
+.submission_deck.active .sub_deck:nth-child(2){display: block;}
+.submission_deck.active .sub_deck:nth-child(3){display: none;}
+
+.submission_deck.select_team .sub_deck:nth-child(1){display: none;}
+.submission_deck.select_team .sub_deck:nth-child(2){display: none;}
+.submission_deck.select_team .sub_deck:nth-child(3){display: block;}
+
+.submission_deck .sub_deck .preview_window{width: calc(100% - 7px); height: 250px; border: 1px solid #999; margin-bottom: 10px; padding: 5px 0 5px 5px;}
+.submission_deck .sub_deck .preview_window .preview_nav{display: block; width: 100%; margin-top: 95px; text-align: center;}
+
+.submission_deck .sub_deck .preview_window .tile{width: calc(25% - 5px); height: 185px; margin: 0 5px 5px 0; float: left; background-size: cover!important; background-position: center center!important; position: relative;}
+
+.submission_deck .sub_deck .preview_window .tile .delete{width: 30px; height: 30px; display: inline-block; background: #151515 url(../images/buttons/close-button-white.svg) no-repeat; background-size: 15px 15px; background-position: center center; opacity: 0; transition: opacity 0.25s;}
+.submission_deck .sub_deck .preview_window .tile:hover .delete{opacity: 1; transition: opacity 0.25s;}
+.submission_deck .sub_deck .preview_window .tile .preview{width: 30px; height: 30px; display: inline-block; background: #151515 url(../images/buttons/search-icon-white.svg) no-repeat; background-size: 15px 15px; background-position: center center; opacity: 0; transition: opacity 0.25s; position: absolute; bottom: 0; right: 0;}
+.submission_deck .sub_deck .preview_window .tile:hover .preview{opacity: 1; transition: opacity 0.25s;}
+
+.grid .talltile{float: left; width: calc(20% - 10px); height: 380px; margin: 0 10px 10px 0; background: #121212; position: relative; transition: background 0.25s;}
+.grid .talltile:hover{background: white; color: #151515; transition: all 0.25s; }
+
+.grid .talltile .thumb{position: relative; top: 0; left: 0; width: 100%; height: 210px; background: #666; background-size: cover!important; background-position: center center!important;}
+.grid .talltile .thumb .zoom{position: absolute; bottom: 0; right: 0;  width: 40px; height: 40px; background: #151515 url(../images/buttons/search-icon.svg) no-repeat; background-size: 50% 50%; background-position: center center; cursor: pointer;}
+.grid .talltile .textwrapper{display: block; padding: 40px 10px 10px 10px; }
+.grid .talltile:hover .textwrapper h3 a{color: #151515;}
+.grid .talltile .tilenav{position: absolute; bottom: 20px; left: 0; width: 100%; text-align: center;}
+
+.grid .talltile .avatar{    width: 50px; height: 50px; position: absolute; left: calc(50% - 25px); top: 185px; background: #666; background-size: cover!important; background-position: center center!important; clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);}
+
+@media(max-width: 1240px){
+	.grid .talltile{width: calc(25% - 10px);}
+}
+
+@media(max-width: 1023px){
+	.size3of4 .unit_right_padding{width: 100%; padding-right: 0;}
+	.grid .talltile{width: calc(33.33% - 10px);}
+}
+
+@media(max-width: 900px){
+	.submission_deck .sub_deck .preview_window .tile{width: 195px;}
+	.submission_deck .sub_deck .preview_window .tile .delete{opacity: 1;}
+}
+
+@media(max-width: 840px){
+	.top_ribbon{padding: 15px 0; font-size: 24px;}
+	.grid .talltile{width: calc(50% - 10px);}
+}
+
+
+
+@media(max-width: 480px){
+	.top_ribbon{padding: 12px 0; font-size: 20px;}
+	.submission_deck .sub_deck .preview_window .tile{width: calc(50% - 5px); height: 120px;}
+	.grid .talltile{width: calc(100% - 10px);}
+}

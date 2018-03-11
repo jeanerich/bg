@@ -1,0 +1,26 @@
+.form.dark .formfield label{font-family: din-condensed, sans-serif;  font-size: 1.2em; text-transform: uppercase;}
+
+.form.dark .formfield input[type=text], .form.dark .formfield select, .form.dark .formfield textarea, .form.dark .formfield input[type=email], .form.dark .formfield input[type=password], .form.dark .formfield input[type=date]{background: #000000; color: #CCC;}
+
+.form.dark .formfield .radiobar{
+	display: block;
+	width: calc(100% - 20px);
+}
+
+.form.dark .formfield .radiobar .radiobutton{background: black; padding: 10px 0; text-align: center; cursor: pointer;}
+.form.dark .formfield .radiobar .radiobutton.active, .form .formfield .radiobar .radiobutton:hover{background: #ffad2d; transition: background 0.25s;}
+.form.dark .formfield .radiobar .radiobutton.active .check, .form .formfield .radiobar .radiobutton:hover .check{position: absolute; top: 0; left: -30px; width: 16px; height: 16px; background: url(../images/buttons/checked-dark.svg) no-repeat;}
+.form.dark .formfield .radiobar .radiobutton span{font-size: 16px; text-transform: uppercase; margin: 0 auto; display: inline-block; position: relative;}
+.form.dark .formfield .radiobar .radiobutton.active span, .form .formfield .radiobar .radiobutton:hover span{color: black;}
+
+.form.dark .formfield .radiobar  .radioselect{display: inline-block; background: url(../images/buttons/checkbox-unchecked-grey.svg) no-repeat; background-size: 24px 24px; background-position: left top 5px;}
+.form.dark .formfield .radiobar  .radioselect span{font-size: 13px; height: 20px;  display: block; padding: 10px 10px 10px 32px; cursor: pointer;}
+.form.dark .formfield .radiobar  .radioselect.active{background: url(../images/buttons/checkbox-checked-grey.svg) no-repeat; background-size: 24px 24px; background-position: left top 5px;}
+.form.dark .formfield.size1of3{width: 33.33%;}
+
+.form.dark .formfield.error input{background: red;}
+
+.form.dark button{background: #ffad2d; color: #151515; font-size: 18px; font-family: din-condensed, sans-serif; padding: 15px 0; width: calc(100% - 20px); text-align: center; border: 0px none; display: block; text-transform: uppercase; letter-spacing: 0.4em; cursor: pointer; transition: all 0.25s;}
+.form.dark button:hover{background: #151515; color: #FFFFFF; transition: all 0.25s;}
+
+.form.dark .subtext{font-size: 11px; color: white; padding: 2px 0; margin: 0; width: calc(100% - 20px);}

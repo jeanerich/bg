@@ -1,0 +1,39 @@
+.w1200 .pop_up_list{width: 100%; padding: 0; margin: 0; text-indent: 0;}
+.w1200 .pop_up_list li{list-style: none; width: 100%; padding: 5px 0 15px 0; border-top: 1px solid #CCC; position: relative; min-height: 100px;}
+.w1200 .pop_up_list li:last-child{border-bottom: 1px solid #CCC; margin-bottom: 10px;}
+.w1200 .pop_up_list li.indent{padding: 5px 0 15px 110px; width: calc(100% - 110px);}
+
+.w1200 .pop_up_list li .thumb{width: 100px; height: 100px; position: absolute; top: 5px; left: 0; background: #AAA; background-size: cover!important; background-position: center center!important; }
+.w1200 .pop_up_list li p{padding: 0; margin: 0; line-height: 1.4em; font-size: 14px;}
+.w1200 .pop_up_list li p.time{font-size: 12px; color: #DDD;}
+.w1200 .pop_up_list li a{color: #ffad2d; font-weight: 700; text-decoration: underline;}
+.w1200 .pop_up_list li a.button{color: #151515; text-decoration: none;}
+.w1200 .pop_up_list li a.button:hover{color: white;}
+.w1200  p.more{padding: 0 20px 20px 20px; font-size: 11px; margin: 0;}
+.w1200  p.more a{color: #ffad2d; font-weight: strong;}
+
+.w1200 .pagination{display: block;
+padding: 10px 0; margin: 10px 0;}
+
+.w1200  .pop_up_list li p.message_excerpt{padding: 5px 0; margin: 5px 0; border-top: 1px solid #666; display: block;}
+
+.message_deck{border-top: 1px solid #999; padding: 5px 0; font-size: 14px;}
+
+.message_deck .unit strong{margin-right: 20px; display: inline-block;}
+.message_deck .unit span{display: inline-block; width: calc(100% - 90px);}
+.message_deck .unit span a{color: #ffad2d; font-weight: 700;}
+
+.message_body{padding: 30px 0; line-height: 1.6em; font-size: 16px;}
+
+@media(max-width: 840px){
+	.message_deck .size1of3{width: 100%; padding: 5px 0; border-bottom: 1px solid #333;}
+	.message_deck .size1of3:last-child{border-bottom: 0px none;}
+	.message_deck .unit strong{width: 80px; margin-right: 0;}
+	.message_deck .unit span{width: calc(100% - 120px);}
+	
+}
+
+@media(max-width: 540px){
+	.w1200 .pop_up_list li.indent{padding: 5px 0 15px 60px; width: calc(100% - 60px);}
+	.w1200 .pop_up_list li .thumb{width: 50px; height: 50px;}
+}
